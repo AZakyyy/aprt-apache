@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Floating Particles -->
+    <canvas id="particles"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Nama Kamu</div>
+        <ul class="nav-links">
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#portfolio">Proyek</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <button class="dark-mode-toggle">🌙</button>
+        <div class="menu-toggle">&#9776;</div>
+    </nav>
+
+    <!-- Hero Section with Glitch Effect -->
+    <header class="hero" data-scroll>
+        <h1 class="glitch" data-text="Halo, saya Nama Kamu">Halo, saya Nama Kamu</h1>
+        <p>Web Developer | UI/UX Designer</p>
+        <a href="#portfolio" class="btn shake">Lihat Portofolio</a>
+    </header>
+
+    <!-- About Me -->
+    <section id="about" data-scroll>
+        <h2>Tentang Saya</h2>
+        <p>Saya adalah pengembang web dengan pengalaman dalam HTML, CSS, JavaScript, dan framework modern.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" data-scroll>
+        <h2>Keahlian Saya</h2>
+        <div class="skill">
+            <p>HTML</p>
+            <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill">
+            <p>CSS</p>
+            <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill">
+            <p>JavaScript</p>
+            <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Nama Kamu. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

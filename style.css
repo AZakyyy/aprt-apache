@@ -1,0 +1,116 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Floating Particles */
+canvas#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+.navbar ul li {
+    margin: 0 10px;
+}
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.navbar ul li a:hover {
+    color: #ff4757;
+}
+
+/* Hero Section with Glitch Effect */
+.hero {
+    height: 100vh;
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+}
+.glitch {
+    position: relative;
+    font-size: 2.5rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    animation: glitch 1.5s infinite;
+}
+@keyframes glitch {
+    0% { text-shadow: 2px 2px red, -2px -2px blue; }
+    50% { text-shadow: -2px -2px red, 2px 2px blue; }
+    100% { text-shadow: 2px -2px blue, -2px 2px red; }
+}
+
+/* Shake Effect */
+.shake:hover {
+    animation: shake 0.3s ease-in-out infinite;
+}
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(3px); }
+}
+
+/* Skills Section */
+#skills {
+    padding: 60px 20px;
+    background: #f4f4f4;
+}
+.skill {
+    margin-bottom: 15px;
+}
+.skill-bar {
+    background: #ddd;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.skill-progress {
+    height: 10px;
+    background: linear-gradient(to right, #ff4757, #ff6b81);
+    width: 0;
+    transition: width 2s ease-in-out;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
